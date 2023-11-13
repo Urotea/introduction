@@ -1,14 +1,27 @@
 {
-  "name": "docker_web_app",
-  "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
-  "main": "server.js",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "build": "next build",
+    "dev": "next dev --turbo",
+    "start": "next start"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "@types/node": "20.5.7",
+    "@vercel/postgres": "^0.5.0",
+    "next": "^14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.2.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.14",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "prettier": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
