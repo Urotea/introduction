@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/_lib/placeholder-data.js",
+    "src/app/_lib/placeholder-data.js",
     "scripts/seed.js"
   ],
   "exclude": ["node_modules"]
