@@ -1,4 +1,5 @@
 import { Viewport } from "next";
+import ThemeRegistry from "./ThemeRegistry";
 
 export const viewPort: Viewport = {
   width: "device-width",
@@ -14,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="jp">
-      <body>{children}</body>
+      <ThemeRegistry options={{ key: "mui" }}>
+        <body>
+          <main>{children}</main>
+        </body>
+      </ThemeRegistry>
     </html>
   );
 }
