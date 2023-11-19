@@ -2,6 +2,8 @@ import { Viewport } from "next";
 import ThemeRegistry from "./_theme/ThemeRegistry";
 import { AppBar } from "./_appbar";
 import { Roboto } from "next/font/google";
+import { Box, Card } from "@mui/material";
+import { colors } from "./_theme";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -26,7 +28,22 @@ export default function RootLayout({
       <ThemeRegistry options={{ key: "mui" }}>
         <body>
           <AppBar />
-          <main>{children}</main>
+          <main>
+            <Box
+              sx={{
+                my: 6,
+                mx: 8,
+              }}
+            >
+              <Card
+                sx={{
+                  backgroundColor: colors.gray,
+                }}
+              >
+                {children}
+              </Card>
+            </Box>
+          </main>
         </body>
       </ThemeRegistry>
     </html>
