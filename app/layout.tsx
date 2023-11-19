@@ -1,5 +1,5 @@
 import { Viewport } from "next";
-import ThemeRegistry from "./ThemeRegistry";
+import ThemeRegistry from "./_theme/ThemeRegistry";
 import { AppBar } from "./_appbar";
 import { Roboto } from "next/font/google";
 

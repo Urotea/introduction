@@ -66,4 +66,5 @@ const ThemeRegistry: React.FC<PropsWithChildren<Props>> = (props) => {
   );
 };
 
+/** @package */
 export default ThemeRegistry;

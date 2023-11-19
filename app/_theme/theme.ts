@@ -1,4 +1,3 @@
-import { Roboto } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -8,4 +7,5 @@ const theme = createTheme({
   components: { MuiAlert: {} },
 });
 
+/** @package */
 export default theme;
